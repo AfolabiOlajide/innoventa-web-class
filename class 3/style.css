@@ -1,0 +1,25 @@
+*{
+    text-align: center;
+}
+
+h1 {
+    color: rgb(34, 93, 72);
+    background-color: rgb(164, 206, 190);
+    font-size: 2rem;
+}
+
+.para {
+    color: green;
+}
+
+#second-paragraph{
+    color: blue;
+}
+/* 0 - 255 */
+
+#h1-image {
+    background-image: url("/images//fly.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+}

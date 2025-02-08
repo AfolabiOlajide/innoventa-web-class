@@ -1,0 +1,30 @@
+nav{
+    background: #3c3c3c;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    /* gap: 1rem; */
+    /* padding: .2rem 1rem; */
+}
+
+#home{
+    background: #238239;
+}
+
+#hover:hover{
+    background: #238239;
+}
+
+a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: .4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+    background: #000;
+}

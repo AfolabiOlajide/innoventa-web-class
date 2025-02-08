@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background: #ffbcbc;
+    padding: .5rem;
+    display: grid;
+    /* flex-direction: row; */
+    /* height: 700px; */
+    /* flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-flow: row-reverse wrap-reverse; */
+    /* justify-content: flex-start; */
+    grid-template-columns: auto auto auto auto;
+    /* gap: 2rem; */
+}
+
+section{
+    background: rgb(227, 255, 220);
+    padding: .2rem;
+    margin: .2rem;
+    /* height: 200px; */
+}
+
+p{
+    max-width: 100px;
+    max-height: 200px;
+    font-size: .7rem;
+}
