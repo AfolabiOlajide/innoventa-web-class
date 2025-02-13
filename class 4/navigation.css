@@ -1,5 +1,8 @@
 nav{
     background: #3c3c3c;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
 ul{
