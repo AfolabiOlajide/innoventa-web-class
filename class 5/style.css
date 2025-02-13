@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+nav{
+    position: relative;
+    background: #3c3c3c;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    z-index: 10;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    /* gap: 1rem; */
+    /* padding: .2rem 1rem; */
+}
+
+#home{
+    background: #238239;
+}
+
+#hover:hover{
+    background: #238239;
+}
+
+a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: .4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:hover{
+    background: #000;
+}
+
+.dropdown {
+    display: block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    /* removes the underline */
+    text-decoration: none;
+    padding: .4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* changes the mouse pointer */
+    cursor: pointer;
+    /* animations */
+    transition: all 1s ease-in-out;
+}
+
+.dropdown:hover {
+    background: #000;
+}
+
+.dropdown:hover .dropdown-items {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-items {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #3c3c3c;
+    top: 100%;
+    border: 1px solid #ffa1a1;
+}
+
+.dropdown-items a{
+
+}
+
+.container {
+    background-color: rgb(47, 55, 55);
+    /* height: 120px;
+    overflow: auto;
+     */
+    position: relative;
+    height: 200px;
+}
+
+.box-1 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.box-2 {   
+    position: absolute;
+    top: 0;
+    left: 25%;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
