@@ -3,14 +3,17 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    height: 100vh;
-    padding-top: 3rem;
+    min-height: 100vh;
 }
 
 nav{
-    position: fixed;
-    /* position: sticky; */
+    /* position: fixed; */
+    position: sticky;
     top: 0;
     background: #3c3c3c;
     width: 100%;
