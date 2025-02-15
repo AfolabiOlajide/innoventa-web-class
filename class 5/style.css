@@ -5,11 +5,15 @@
 
 body {
     height: 100vh;
+    padding-top: 3rem;
 }
 
 nav{
-    position: relative;
+    position: fixed;
+    /* position: sticky; */
+    top: 0;
     background: #3c3c3c;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
