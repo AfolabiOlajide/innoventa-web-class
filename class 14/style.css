@@ -84,4 +84,8 @@ a:hover {
     main {
         width: 90%;
     }
+
+    .bio > p {
+        font-size: 0.7rem;
+    }
 }
