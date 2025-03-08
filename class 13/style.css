@@ -124,8 +124,25 @@ main {
     color: hsl(228, 45%, 44%);
 }
 
+/* tablets */
+@media screen and (max-width: 900px) {
+    main {
+        width: 50%;
+    }
+}
+
+/* mobile screens */
 @media screen and (max-width: 600px) {
     body {
         background-image: url("./resource/images/pattern-background-mobile.svg");
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .card-info {
+        padding: 2rem 2rem 2rem;
+        gap: 1rem;
     }
 }
