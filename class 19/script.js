@@ -123,3 +123,5 @@ console.log("for of loop");
 for (let x of array) {
     console.log(x);
 }
+
+// edited on github
