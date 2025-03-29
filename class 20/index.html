@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 20</title>
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="./learnDom.js"></script> -->
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <p id="para"></p>
+    <main class="container"></main>
+    <button class="add">Add class</button>
+    <button class="remove">Remove class</button>
+    <button class="toggle">Toggle class</button>
+
+    <div>
+        <img id="img" src="./images/fly.jpg" width="200" height="200" alt="">
+        <button class="img-btn">change image</button>
+
+    </div>
+</body>
+<script>
+    // this is how we create an element
+    let container = document.querySelector(".container");
+    let header = document.createElement("h1");
+    header.innerHTML = "Header created using javascript";
+    header.style.fontFamily = "verdana";
+    container.appendChild(header);
+
+    //----------------------------------------------------
+    //----------------------------------------------------
+    //----------------------------------------------------
+    // changing html content and styles
+
+    let para = document.getElementById("para");
+    para.innerHTML = "Hello from javascript";
+
+    function addStyles() {
+        para.classList.add("text-red")
+        para.classList.add("text-center")
+    }
+
+    let add = document.querySelector(".add");
+    add.addEventListener("click", addStyles)
+    let remove = document.querySelector(".remove");
+    remove.addEventListener("click", function () {
+        para.classList.remove("text-red")
+        para.classList.remove("text-center")
+    })
+    let toggle = document.querySelector(".toggle");
+    toggle.addEventListener("mouseover", function () {
+        para.classList.toggle("text-red")
+        para.classList.toggle("text-center")
+    })
+
+    //----------------------------------------------------
+    //----------------------------------------------------
+    //----------------------------------------------------
+    // functionality to change image with button click
+    let img = document.getElementById("img");
+    let imgBtn = document.querySelector(".img-btn");
+    imgBtn.addEventListener("click", function () {
+        img.src = "./images/block3 3.jpg";
+    })
+
+</script>
+
+</html>
