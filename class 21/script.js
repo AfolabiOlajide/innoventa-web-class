@@ -130,13 +130,3 @@ function deleteItemFromDatabase(index) {
 
     updateTodoItems();
 }
-
-// function showTodoList() {
-//     for (let i = 0; i < todoListArray.length; i++) {
-//         const li = document.createElement("li");
-//         li.textContent = todoListArray[i];
-//         todoList.appendChild(li);
-//     }
-// }
-
-// showTodoList();
