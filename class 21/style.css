@@ -66,7 +66,8 @@ body {
     background: rgb(17, 171, 17);
 }
 
-.todo-button-clear {
+.todo-button-clear,
+.todo-item-button-clear {
     background: rgb(191, 17, 17);
 }
 

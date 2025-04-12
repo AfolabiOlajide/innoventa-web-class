@@ -45,7 +45,7 @@ todoButton.addEventListener("click", function () {
     todoList.appendChild(li);
     todoInput.value = "";
     // save todo list to local storage
-    console.log("todolistarray", todoListArray);
+    // console.log("todolistarray", todoListArray);
     saveTodoList();
     updateTodoItems();
 });
@@ -60,7 +60,7 @@ function saveTodoList() {
     const database = JSON.parse(localStorage.getItem("todoListArray"));
     // if todo list is not empty
     if (database) {
-        console.log("local todo list", database);
+        // console.log("local todo list", database);
         // concatenate the local todo list with the new todo list
         // [item1]
         const newTodoList = database.concat(
@@ -100,33 +100,28 @@ function createDeleteButton() {
     return deleteButton;
 }
 
-function deleteTodoItem(item) {
-    console.log(item);
-}
+// function deleteTodoItem(item) {
+//     console.log(item);
+// }
 
 function updateTodoItems() {
     allTodoItemsBtn = document.querySelectorAll(".todo-item-button-clear");
-    // for each selects all the buuttons in the array and loops through them
     allTodoItemsBtn.forEach((btn, i) => {
-        btn.addEventListener("click", function (event) {
+        btn.addEventListener("click", function () {
             btn.parentElement.remove();
-            deleteItemFromDatabase(i);
+            const item = btn.parentElement.textContent.split("delete")[0];
+            deleteItemFromDatabase(item);
         });
     });
 }
 
-function deleteItemFromDatabase(index) {
+function deleteItemFromDatabase(item) {
     // get todo list from local storage
     const database = JSON.parse(localStorage.getItem("todoListArray"));
     // if todo list is not empty
     if (database) {
-        let newList = database;
-        newList.splice(index, 1);
+        let newList = database.filter((element) => element !== item);
         localStorage.setItem("todoListArray", JSON.stringify(newList));
-        // set todo list to an empty array
-        todoListArray = [];
         return;
     }
-
-    updateTodoItems();
 }
