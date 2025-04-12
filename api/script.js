@@ -8,7 +8,7 @@ async function getToDo() {
 
     let response = await fetch("https://jsonplaceholder.typicode.com/todos/");
     let transformedData = await response.json();
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < transformedData.length; i++) {
         console.log(transformedData[i]);
     }
 }
